@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- button_background.xml -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <corners android:radius="4dp" />
+    <solid android:color="#000000" /> <!-- Ganti warna dengan hitam (#000000) atau warna lain yang diinginkan -->
+</shape>
+

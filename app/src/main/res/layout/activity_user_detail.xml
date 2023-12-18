@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:elevation="4dp"
+        android:padding="4dp"
+        android:background="@color/green4"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintTop_toTopOf="parent"
+        app:popupTheme="?attr/actionBarPopupTheme">
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <LinearLayout
+        android:id="@+id/personalInfoLayout"
+        app:layout_constraintTop_toBottomOf="@id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20sp"
+        android:background="#FFFFFF"
+        android:elevation="2dp"
+        android:orientation="vertical"
+        android:outlineSpotShadowColor="#000000"
+        android:padding="15dp">
+
+
+
+
+            <!-- Name -->
+            <TextView
+                android:id="@+id/nameTitleTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#E8E8E8"
+                android:elevation="2dp"
+                android:outlineSpotShadowColor="#000000"
+                android:paddingStart="15dp"
+                android:paddingTop="4dp"
+                android:paddingEnd="15dp"
+                android:paddingBottom="4dp"
+                android:text="Nama"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/nameTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#E8E8E8"
+                android:elevation="2dp"
+                android:outlineSpotShadowColor="#000000"
+                android:paddingStart="15dp"
+                android:paddingTop="4dp"
+                android:paddingEnd="15dp"
+                android:paddingBottom="4dp"
+                android:text="John Doe"
+                android:textSize="14sp" />
+
+            <!-- Nik/Nip -->
+            <TextView
+                android:id="@+id/nikNipTitleTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#E8E8E8"
+                android:elevation="2dp"
+                android:outlineSpotShadowColor="#000000"
+                android:paddingStart="15dp"
+                android:paddingTop="4dp"
+                android:paddingEnd="15dp"
+                android:paddingBottom="4dp"
+                android:text="Nik/Nip"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/nikNipTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#E8E8E8"
+                android:elevation="2dp"
+                android:outlineSpotShadowColor="#000000"
+                android:paddingStart="15dp"
+                android:paddingTop="4dp"
+                android:paddingEnd="15dp"
+                android:paddingBottom="4dp"
+                android:text="123456789"
+                android:textSize="14sp" />
+
+            <!-- Jenis Kelamin -->
+            <TextView
+                android:id="@+id/jenisKelaminTitleTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#E8E8E8"
+                android:elevation="2dp"
+                android:outlineSpotShadowColor="#000000"
+                android:paddingStart="15dp"
+                android:paddingTop="4dp"
+                android:paddingEnd="15dp"
+                android:paddingBottom="4dp"
+                android:text="Jenis Kelamin"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/jenisKelaminTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#E8E8E8"
+                android:elevation="2dp"
+                android:outlineSpotShadowColor="#000000"
+                android:paddingStart="15dp"
+                android:paddingTop="4dp"
+                android:paddingEnd="15dp"
+                android:paddingBottom="4dp"
+                android:text="Laki-laki"
+                android:textSize="14sp" />
+
+            <!-- Pekerjaan -->
+            <TextView
+                android:id="@+id/pekerjaanTitleTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#E8E8E8"
+                android:elevation="2dp"
+                android:outlineSpotShadowColor="#000000"
+                android:paddingStart="15dp"
+                android:paddingTop="4dp"
+                android:paddingEnd="15dp"
+                android:paddingBottom="4dp"
+                android:text="Pekerjaan"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/pekerjaanTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#E8E8E8"
+                android:elevation="2dp"
+                android:outlineSpotShadowColor="#000000"
+                android:paddingStart="15dp"
+                android:paddingTop="4dp"
+                android:paddingEnd="15dp"
+                android:paddingBottom="4dp"
+                android:text="Engineer"
+                android:textSize="14sp" />
+
+            <!-- Email -->
+            <TextView
+                android:id="@+id/emailTitleTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#E8E8E8"
+                android:elevation="2dp"
+                android:outlineSpotShadowColor="#000000"
+                android:paddingStart="15dp"
+                android:paddingTop="4dp"
+                android:paddingEnd="15dp"
+                android:paddingBottom="4dp"
+                android:text="Email"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/emailTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#E8E8E8"
+                android:elevation="2dp"
+                android:outlineSpotShadowColor="#000000"
+                android:paddingStart="15dp"
+                android:paddingTop="4dp"
+                android:paddingEnd="15dp"
+                android:paddingBottom="4dp"
+                android:text="johndoe@example.com"
+                android:textSize="14sp" />
+
+
+    </LinearLayout>
+
+    <com.github.mikephil.charting.charts.LineChart
+        android:id="@+id/chart"
+        android:layout_width="366dp"
+        android:layout_height="267dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/personalInfoLayout"
+        app:layout_constraintVertical_bias="0.447" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

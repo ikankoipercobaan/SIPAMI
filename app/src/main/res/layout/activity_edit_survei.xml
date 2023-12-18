@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/green4"
+        android:elevation="4dp"
+        android:theme="?attr/actionBarTheme"
+        app:popupTheme="?attr/actionBarPopupTheme"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <RelativeLayout
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="20dp"
+        android:layout_marginTop="?attr/actionBarSize"
+        tools:context=".Controller.EditSurveiActivity">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textViewEditNamaSurvei"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nama Survei"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_below="@id/toolbar"
+                android:layout_marginTop="16dp" />
+
+            <EditText
+                android:id="@+id/editTextNamaSurvei"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textViewEditNamaSurvei"
+                android:layout_marginTop="8dp"
+                android:hint="Masukkan nama survei" />
+
+            <TextView
+                android:id="@+id/textViewEditTanggalMulai"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/editTextNamaSurvei"
+                android:layout_marginTop="16dp"
+                android:text="Tanggal Mulai"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/editTextTanggalMulai"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textViewEditTanggalMulai"
+                android:layout_marginTop="8dp"
+                android:inputType="date"
+                android:hint="Pilih tanggal mulai" />
+
+            <TextView
+                android:id="@+id/textViewEditTanggalSelesai"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/editTextTanggalMulai"
+                android:layout_marginTop="16dp"
+                android:text="Tanggal Selesai"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/editTextTanggalSelesai"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textViewEditTanggalSelesai"
+                android:layout_marginTop="8dp"
+                android:inputType="date"
+                android:hint="Pilih tanggal selesai" />
+
+            <!-- Sisipkan elemen UI lainnya dan tetapkan aturan tata letak yang sesuai -->
+
+            <Button
+                android:id="@+id/buttonSimpan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/editTextTanggalSelesai"
+                android:layout_marginTop="16dp"
+                android:layout_gravity="right"
+                android:backgroundTint="@color/gold"
+                android:text="Simpan" />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

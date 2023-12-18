@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    >
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/buttonLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:orientation="vertical"
+        android:paddingHorizontal="25dp"
+        android:paddingTop="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/viewPager">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="361dp"
+            android:layout_height="wrap_content"
+            android:backgroundTintMode="add"
+            android:fontFamily="monospace"
+            android:paddingVertical="10sp"
+            android:text="SELAMAT DATANG SOBAT BPS"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="wrap_content"
+            android:layout_height="99dp"
+            app:srcCompat="@drawable/logosobatbps" />
+
+        <Button
+            android:id="@+id/btnLoginOpening"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="30sp"
+            android:backgroundTint="#4E5942"
+            android:backgroundTintMode="screen"
+            android:paddingVertical="15sp"
+            android:text="Login"
+            android:textColor="#FFFFFF" />
+
+        <Button
+            android:id="@+id/btnRegisterOpening"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="30sp"
+            android:backgroundTint="#4E5942"
+            android:backgroundTintMode="screen"
+            android:paddingVertical="15sp"
+            android:text="Register"
+            android:textColor="#FFFFFF" />
+
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="361dp"
+            android:layout_height="wrap_content"
+            android:backgroundTintMode="add"
+            android:fontFamily="monospace"
+            android:gravity="center"
+            android:paddingVertical="20dp"
+            android:text="Halo Mitra BPS! Aplikasi ini adalah wujud komitmen kami untuk meningkatkan kualitas data statistik. Mari bersama-sama menjadikan informasi yang lebih akurat dan dapat diandalkan."
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textSize="14sp" />
+
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

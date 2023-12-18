@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+        <!-- Warna Dasar -->
+        <color name="black">#FF000000</color>
+        <color name="white">#FFFFFFFF</color>
+
+        <!-- Warna Logo BPS -->
+        <color name="bps_blue">#0033A0</color> <!-- Biru BPS -->
+        <color name="bps_orange">#FF8500</color> <!-- Oranye BPS -->
+        <color name="bps_green">#00796B</color> <!-- Hijau BPS -->
+
+        <color name="red">#FF0000</color>
+        <color name="soft_green">#77ab59</color>
+        <color name="green2">#809c13</color>
+        <color name="green3">#607c3c</color>
+        <color name="green4">#666e55</color>
+        <color name="blue1">#189ad3</color>
+        <color name="blue2">#107dac</color>
+        <color name="blue3">#005073</color>
+        <color name="gold">#b78202</color>
+
+</resources>
