@@ -7,7 +7,7 @@ import retrofit2.converter.gson.GsonConverterFactory;
 import retrofit2.converter.scalars.ScalarsConverterFactory;
 
 public class ApiClient {
-    private static final String BASE_URL = "http://192.168.1.18:8083/";
+    private static final String BASE_URL = "http://10.135.16.105:8083/";
     private static Retrofit retrofit = null;
     public static Retrofit getRetrofitInstance() {
         if (retrofit == null) {
